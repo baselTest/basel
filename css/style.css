@@ -1,0 +1,705 @@
+* {
+    margin: 0%;
+    padding: 0%;
+
+}
+
+/* navbar */
+.navbar {
+    background-color: transparent;
+}
+
+.nav-link, .navbar-brand {
+    color: rgb(255, 255, 255) !important;
+    font-size: 13px;
+
+}
+
+.navbar-brand img {
+    max-height: 40px;
+}
+
+/* carousel */
+
+
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat scroll center;
+    background-size: cover;
+}
+
+.carousel-item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 30%;
+}
+
+.carousel-caption h5 {
+    font-size: 100px;
+    color: #fff;
+    font-weight: 700px;
+
+}
+
+.carousel-caption p {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    margin: 10 0;
+}
+
+.header .carousel-inner {
+    position: relative;
+}
+
+.header-buttons {
+    position: absolute;
+    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style buttons */
+.btn {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    color: white;
+    padding: 5px 5px;
+    font-size: 16px;
+    font-weight: 200;
+    cursor: pointer;
+
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+    background-color: white;
+}
+
+.fa i {
+    color: white !important;
+}
+
+.carousel-indicators button {
+    color: white !important;
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    height: 2px !important;
+}
+
+.carousel-item button :hover {
+    transition: transform 1s 1s;
+    transform: translateY(-1px);
+}
+
+.btn-blue {
+    text-align: center;
+    padding: 0 30;
+    height: 50px;
+    color: #fff;
+    background-color: #00c3da;
+    border: transparent;
+    border-radius: 4px;
+}
+
+.btn-trans {
+    text-align: center;
+    padding: 0 30;
+    height: 50px;
+    color: #fff;
+    border-color: #fff;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.btn-trans :hover {
+    transition: background-color 1s 1s, color 1s 1s;
+    background-color: white;
+    color: black;
+}
+
+/* who */
+.who-we {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50 0;
+}
+
+.who-caption {
+    margin: 50 50;
+    text-align: center;
+}
+
+.who-caption h2 {
+    font-size: 13px;
+    color: #1f1f1f;
+    font-weight: 500;
+    margin-top: 40;
+}
+
+.who-caption h3, p {
+    color: rgb(120, 120, 120);
+    font-size: 24;
+    font-weight: 300;
+    margin: 10 0;
+}
+
+.who-caption button {
+    border-width: 1px;
+    color: #1f1f1f;
+    font-size: 11px;
+    font-weight: 500;
+    border-color: rgba(222, 222, 222, 0.5);
+    background-color: transparent;
+    margin-top: 40;
+    padding: 10 20;
+
+}
+
+.what-caption button:hover {
+    background-color: black;
+}
+
+
+/* creative */
+.creative {
+    position: relative;
+}
+
+.creative h1 {
+    color: rgba(120, 120, 120, 0.5);
+    font-size: 60px;
+    position: absolute;
+    left: 48%;
+    top: -15;
+}
+
+.creative h2 {
+    margin: 10 0;
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(31, 31, 31);
+    z-index: 99;
+}
+
+.creative h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(120, 120, 120);
+    margin: 10 0;
+}
+
+.creative img {
+    width: 20%;
+    box-sizing: border-box;
+    margin: 50 30;
+}
+
+.images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+/* what */
+.what {
+    background-color: #1f1f1f;
+    opacity: 0.7;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 50 50;
+    margin: 50 0;
+}
+
+.what-caption {
+    display: flex;
+    justify-content: space-around;
+    margin: 50 0;
+    position: relative;
+}
+
+.what h6 {
+    color: rgba(120, 120, 120, 0.5);
+    z-index: -50;
+    font-size: 70;
+    position: absolute;
+    top: -40;
+    left: 40;
+}
+
+.left-part {
+    width: 25%;
+}
+
+.left-part h4 {
+    font-size: 38px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.left-part p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.right-part {
+    margin: 0 50;
+    display: flex;
+    width: 50%;
+    white-space: nowrap;
+}
+
+.right-part h5 {
+    width: 20%;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.right-part li {
+    list-style: none;
+    display: inline;
+    width: 100%;
+    margin: 30 0;
+}
+
+.right-part ul {
+    width: 100%;
+}
+
+.titles {
+    display: flex;
+    justify-content: center;
+
+}
+
+.titles h2 {
+    margin: 50 50;
+    color: white;
+}
+
+.true-right {
+    margin: 0 50;
+}
+
+.fa-solid {
+    margin: 0 20;
+}
+
+/* prices */
+.prices {
+    background-color: #f7f7f7;
+    padding: 50 0;
+    height: 100%;
+    position: relative;
+}
+
+.prices h6 {
+
+    font-size: 70;
+    color: rgba(120, 120, 120, 0.3);
+    position: absolute;
+    left: 48%;
+    top: 30;
+}
+
+.prices-caption {
+    text-align: center;
+    margin-bottom: 50;
+}
+
+.prices-caption h2 {
+    color: #1f1f1f;
+    z-index: 5;
+    font-weight: 700;
+    font-size: 38;
+}
+
+.prices-caption h3 {
+    color: #787878;
+    font-size: 18;
+    font-weight: 400;
+}
+
+.prices-cards {
+    display: flex;
+    justify-content: center;
+    margin: 50 0;
+}
+
+.card {
+    margin: 0 30;
+    background-color: #fff;
+}
+
+.card button {
+    background-color: #00c3da !important;
+}
+
+.best button {
+    background-color: #00c3da !important;
+    padding: 5 15;
+    font-weight: 500;
+    border: transparent;
+    border-radius: 20px;
+    font-size: 9px;
+    color: white;
+    float: right;
+}
+
+.card p {
+    color: rgb(31, 31, 31);
+    font-size: 55px;
+}
+
+.card h5 {
+    font-size: 13px !important;
+    color: #1f1f1f;
+    font-weight: 400;
+}
+
+.card h6 {
+    color: rgb(0, 195, 218) !important;
+    font-size: 55px !important;
+}
+
+.card li {
+    color: rgb(120, 120, 120);
+}
+
+/* customer */
+.customer img {
+    width: 100px !important;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50;
+
+}
+
+.customer h1 {
+    text-align: center;
+    color: #1f1f1f;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.customer h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 30 0;
+}
+
+.customer h3 {
+    font-size: 12px;
+    color: rgb(120, 120, 120);
+}
+
+.customer p {
+
+    font-size: 18;
+    color: rgb(120, 120, 120);
+}
+
+.cutomer {
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50;
+}
+
+.customer .carousel {
+    text-align: center;
+    width: 50%;
+    height: 500px;
+    background-color: white !important;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+
+
+}
+
+.customer .carousel-inner {
+    height: 100%;
+}
+
+.customer button {
+    background-color: #00c3da !important;
+    width: 50px;
+    height: 50px;
+    border-radius: 50% !important;
+}
+
+/* footer */
+.footer {
+    display: flex;
+    width: 100%;
+    margin-top: 50;
+    position: relative;
+
+}
+
+.footer h6 {
+    z-index: -50;
+    font-size: 70;
+    color: rgba(120, 120, 120, 0.3);
+    position: absolute;
+    top: -20;
+}
+
+.footer h2 {
+    color: rgb(31, 31, 31);
+    font-size: 38;
+    font-weight: 700;
+}
+
+.footer h3 {
+    color: rgb(120, 120, 120);
+    font-size: 18px;
+}
+
+.map {
+    width: 50%;
+    height: 100%;
+}
+
+.form {
+    width: 50%;
+}
+
+.form button {
+    background-color: #00c3da;
+    margin-bottom: 20;
+
+}
+
+.footer input {
+    width: 80%;
+}
+
+.message {
+    height: 20%;
+}
+
+
+/* animation */
+
+.who-we.animo ::after {
+    content: '|';
+    animation-name: animo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animo {
+    0% {
+        content: 'W|';
+    }
+
+    2% {
+        content: 'WE|';
+    }
+
+
+    4% {
+        content: 'WEB|';
+    }
+
+
+
+    6% {
+        content: ' WEB |';
+    }
+
+    8% {
+        content: 'WEB S |';
+    }
+
+    10% {
+        content: 'WEB SI|';
+    }
+
+    12% {
+        content: 'WEB SIT|';
+
+    }
+
+    14% {
+        content: 'WEB SITE|';
+
+    }
+
+    16% {
+        content: 'WEB SITES|';
+
+    }
+
+    18% {
+        content: 'WEB SITE|';
+
+    }
+
+    20% {
+        content: 'WEB SITE|';
+
+    }
+
+    22% {
+        content: 'WEB SIT|';
+
+    }
+
+    24% {
+        content: 'WEB SI|';
+
+    }
+
+    26% {
+        content: 'WEB S|';
+
+    }
+
+    28% {
+        content: 'WEB |';
+
+    }
+
+    30% {
+        content: 'WEB|';
+
+    }
+
+    32% {
+        content: 'WE|';
+
+    }
+
+    34% {
+        content: 'W|';
+
+    }
+
+    36% {
+        content: 'S|';
+
+    }
+
+    38% {
+        content: "SO|";
+
+    }
+
+    40% {
+        content: 'SOF|';
+
+    }
+
+    42% {
+        content: 'SOFT|';
+
+    }
+
+    44% {
+        content: 'SOFTW |';
+
+    }
+
+    46% {
+        content: 'SOFTA';
+
+    }
+
+    48% {
+        content: 'SOFTWAR|';
+
+    }
+
+    50% {
+        content: 'SOFTWARE|';
+
+    }
+
+    52% {
+        content: 'SOFTWARES|';
+
+    }
+
+    54% {
+        content: 'SOFTWARE|';
+
+    }
+
+    56% {
+        content: 'SOFTWAR|';
+
+    }
+
+    58% {
+        content: 'SOFTWA|';
+
+    }
+
+    60% {
+        content: 'SOFTW|';
+
+    }
+
+    62% {
+        content: 'SOFT|';
+
+    }
+
+    64% {
+        content: 'SOF|';
+
+    }
+
+    66% {
+        content: 'SO|';
+
+    }
+
+    68% {
+        content: 'S|';
+
+    }
+
+    70% {
+        content: 'W|';
+
+    }
+
+    72% {
+        content: 'WE|';
+
+    }
+
+    74% {
+        content: 'WEB|';
+
+    }
+
+
+
+    78% {
+        content: ' |';
+    }
+}
